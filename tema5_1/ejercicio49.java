@@ -38,7 +38,7 @@ public class ejercicio49 {
                 suma+=numero;
                 cuenta++;
             }
-            if (cuenta==1){
+            if (cuenta==1){//para que coja el primer valor introducido como minimo y maximo
                 maximo=numero;
                 minimo=numero;
             }

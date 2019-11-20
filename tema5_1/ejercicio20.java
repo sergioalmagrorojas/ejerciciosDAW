@@ -11,22 +11,13 @@ import java.util.Scanner;
  *
  * @author sergi
  */
-public class ejercicio28 {
+public class ejercicio20 {
     public static void main(String[] args){
         Scanner s =new Scanner(System.in);
         
-        int numero;
-        int factorial=1;
         
         
-        System.out.println("Indiqueme un número y calculo su factorial");
-        numero=Integer.parseInt(s.nextLine());
         
         
-        while(numero!=0){
-            factorial=numero*factorial;
-            numero--;
-        }
-        System.out.println("Factorial : " + factorial);   
     }
 }

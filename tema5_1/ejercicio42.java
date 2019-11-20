@@ -17,7 +17,7 @@ public class ejercicio42 {
         
         int numero;
         boolean primo=true;
-        
+       
         System.out.println("Introduce un número");
         numero=Integer.parseInt(s.nextLine());
         

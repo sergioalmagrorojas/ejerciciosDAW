@@ -33,7 +33,7 @@ public class ejercicio36 {
             System.out.println("El número " + numero + " es capicúa");
             
         }else{
-            System.out.println("El número " + numero + " no es capicúa");
+            System.out.println("El número " + numero + "  no es capicúa");
         }
         
     

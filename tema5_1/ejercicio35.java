@@ -61,7 +61,7 @@ public class ejercicio35 {
                 
                 System.out.print(r);
                 
-                for (int i = 0; i < asteriscos; i++) {
+                for (int i = 0; i <= asteriscos; i++) {
                     System.out.print(" ");
                 }
                 
