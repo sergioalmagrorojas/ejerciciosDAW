@@ -80,4 +80,31 @@ public class matematicas {
     public static int añadeNumero(int x , int f){
         return (int)juntaNumeros(x,f);
     }
+    
+    public static int[] generaArray(int cantidad , int tope , int minimo){
+        int[] array=new int[cantidad];
+        
+        for(int i =0; i<cantidad;i++){
+            array[i]=(int)(Math.random()*(tope-minimo+1)+minimo);
+        }
+        return array;
+    }
+    public static int minimo(int[] array){
+        int minimo=Integer.MAX_VALUE;
+        for (int i : array){
+            if(i<minimo){
+                minimo=i;
+            }
+        }
+        return minimo;
+    }
+    public static int maximo(int[] array){
+        int maximo=Integer.MIN_VALUE;
+        for (int i : array){
+            if(i>maximo){
+                maximo=i;
+            }
+        }
+        return maximo;
+    }
 }
