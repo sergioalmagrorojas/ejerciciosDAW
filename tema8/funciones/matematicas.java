@@ -107,7 +107,7 @@ public class matematicas {
         }
         return maximo;
     }
-    public static long binario(long x){
+    public static long binarioDecimal(long x){
         long decimal=0;
         int exponente=0;
         long digito;
@@ -119,5 +119,18 @@ public class matematicas {
                 x = x / 10;
         }
         return decimal;
+    }
+    public static long decimalBinario(long x){
+        long binario=0;
+        int exponente=0;
+        long digito;
+        
+        while (x != 0) {
+                digito = x % 2;
+                binario = binario + digito * (int) Math.pow(10, exponente);
+                exponente++;
+                x = x / 2;
+        }
+        return binario;
     }
 }
