@@ -133,4 +133,12 @@ public class matematicas {
         }
         return binario;
     }
+    public static double media(int[] array){
+        int suma=0;
+        for(int i:array){
+            suma+=i;
+        }
+        double  media = (double)suma/array.length;
+        return media;
+    }
 }
