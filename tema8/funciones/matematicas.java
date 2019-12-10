@@ -141,4 +141,22 @@ public class matematicas {
         double  media = (double)suma/array.length;
         return media;
     }
+    public static boolean estaArray(int a , int[]array){
+        
+        for(int i : array){
+            if(i==a){
+                return true;
+            }
+        }
+        return false;
+    }
+    public static int posicionArray(int a , int[]array){
+        for(int i =0;i<array.length;i++){
+            if(array[i]==a){
+                return i;
+            }
+        }
+        return -1;
+    }
+    
 }

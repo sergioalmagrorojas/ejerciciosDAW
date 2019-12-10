@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author sergi
  */
-public class ejercicio24 {
+public class ejercicio25 {
     public static void main(String[] args){
         Scanner s=new Scanner(System.in);
         
@@ -29,14 +29,11 @@ public class ejercicio24 {
         }
         System.out.println("");
         
-        System.out.println("Ingresa un número y le digo si está en el array: ");
+        System.out.println("Ingresa un número y le digo la posición en el array: ");
         int numero=s.nextInt();
         
-        if(funciones.matematicas.estaArray(numero, array)){
-            System.out.println("Está en el array");
-        }else {
-            System.out.println("No está en el array");
-        }
+        System.out.println("El número " + numero + " está en la posición " + funciones.matematicas.posicionArray(numero, array) + 
+                 " del array");
         
         
     }
