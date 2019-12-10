@@ -107,4 +107,17 @@ public class matematicas {
         }
         return maximo;
     }
+    public static long binario(long x){
+        long decimal=0;
+        int exponente=0;
+        long digito;
+        
+        while (x != 0) {
+                digito = x % 10;
+                decimal = decimal + digito * (int) Math.pow(2, exponente);
+                exponente++;
+                x = x / 10;
+        }
+        return decimal;
+    }
 }
