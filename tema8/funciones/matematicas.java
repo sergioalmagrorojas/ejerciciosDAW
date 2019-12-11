@@ -158,5 +158,41 @@ public class matematicas {
         }
         return -1;
     }
+    public static void muestraArray(int num[]){
+        for (int i=0;i<num.length;i++){
+            System.out.print(num[i] + " ");
+        }
+    }
+    public static int[] vueltaArray(int[] x){
+        int[] array=new int[x.length];
+        for (int i =0;i<x.length;i++){
+            array[x.length-i-1]=x[i];
+        }
+        return array;
+    }
     
+    public static int[] rotaArrayDerecha(int[] x , int posiciones){
+        int[]array=x.clone();
+        int aux;
+        while (posiciones--> 0) {
+            aux = array[array.length - 1];
+            for (int i = array.length - 1; i > 0; i--) {
+                array[i] = array[i - 1];
+            }
+            array[0] = aux;
+        }
+        return array;
+    }
+    public static int[] rotaArrayIzquierda(int[] x , int posiciones){
+        int[]array=x.clone();
+        int aux;
+        while (posiciones--> 0) {
+            aux = array[0];
+            for (int i = 0; i <array.length-1 ; i++) {
+                array[i] = array[i + 1];
+            }
+            array[array.length - 1] = aux;
+        }
+        return array;
+    }
 }
