@@ -215,5 +215,54 @@ public class matematicas {
         }
         return array;
     }
-    
+    public static int[] filaArray(int[][] array, int fila){
+        int[] filaArray=new int[array[0].length];
+        
+        for(int i=0;i<array[0].length;i++){
+            filaArray[i]=array[fila][i];
+        }
+        return filaArray;
+    }
+    public static int[] columnaArray(int[][] array, int columna){
+        int[] columnaArray=new int[array[0].length];
+        
+        for(int i=0;i<array[0].length;i++){
+            columnaArray[i]=array[i][columna];
+        }
+        return columnaArray;
+    }
+    public static int[] coordernadas(int[][]array , int x){
+        
+        for(int i =0;i<array.length;i++){
+            for(int j=0;j<array[0].length;j++){
+                if(array[i][j]==x){
+                  int[]  coordenadas={i,j};
+                  return coordenadas;
+                }
+            }
+        }
+        int[] noEncuentra={-1,-1};
+        return noEncuentra;
+    } 
+    public static boolean puntoSilla(int[][]array,int fila , int columna){
+        int[]filas=filaArray(array,fila);
+        int []columnas=columnaArray(array,columna);
+        return((funciones.matematicas.minimo(filas)==array[fila][columna])&&
+                (funciones.matematicas.maximo(columnas)==array[fila][columna]));
+    }
+    public static String palotes(int numero){
+        String resultado=" ";
+        
+        for(int i =0;i<digitos(numero);i++){
+            for(int j =0;j<digitoN(numero,i);j++){
+                resultado+="|";
+            }
+            if(i<digitos(numero)-1){
+                resultado+="-";
+            }
+            
+        }
+        return resultado;
+    }
+
 }
