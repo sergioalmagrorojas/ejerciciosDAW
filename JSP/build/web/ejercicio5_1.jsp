@@ -18,7 +18,7 @@
       double euros=Double.valueOf(request.getParameter("euros"));
       double pesetas=euros*166.386;
       DecimalFormat formato = new DecimalFormat("######.###");
-      out.println("La cantidad de  : " + euros + " son " +formato.format(pesetas));
+      out.println("La cantidad de  : " + euros + " son " +formato.format(pesetas) + " pesetas");
     %>
     <form action="ejercicio5.jsp">
     <input type="submit" value="Volver atrás"/> 
