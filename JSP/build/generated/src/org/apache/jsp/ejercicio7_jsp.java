@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class hola_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class ejercicio7_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -48,21 +48,23 @@ public final class hola_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("  <head>\r\n");
       out.write("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("    <title>Hola</title>\r\n");
+      out.write("    <title>JSP Page</title>\r\n");
       out.write("  </head>\r\n");
       out.write("  <body>\r\n");
-      out.write("    <h1>Hello World!</h1>\r\n");
-      out.write("    ");
-
-      for (int i = 0; i < 10; i++) {
-        out.println("Esto es una prueba" + i + "\n");
-      }
-
-    
-      out.write("\r\n");
+      out.write("    <h1>Conversor de divisas (a pesetas)</h1>\r\n");
+      out.write("    <form method=\"post\" action=\"ejercicio5_1.jsp\"> \r\n");
+      out.write("     Cantidad: <input type=\"number\"  step=\"0.5\" name=\"euros\"></br>\r\n");
+      out.write("     <input type=\"submit\" value=\"Ver resultado en pesetas\"> \r\n");
+      out.write("    </form>\r\n");
+      out.write("    \r\n");
+      out.write("    <h1>Conversor de divisas (a euros)</h1>\r\n");
+      out.write("    <form method=\"post\" action=\"ejercicio6_1.jsp\"> \r\n");
+      out.write("     Cantidad: <input type=\"number\"  step=\"10\" name=\"pesetas\"></br>\r\n");
+      out.write("     <input type=\"submit\" value=\"Ver resultado en euros\"> \r\n");
+      out.write("    </form>\r\n");
+      out.write("    \r\n");
       out.write("  </body>\r\n");
-      out.write("</html>\r\n");
-      out.write("\r\n");
+      out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -1,10 +1,10 @@
-package org.apache.jsp;
+package org.apache.jsp.WEB_002dINF;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class ejercicio6_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class ejercicio7_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -43,6 +43,7 @@ public final class ejercicio6_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\r\n");
       out.write("\r\n");
+      out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
       out.write("<html>\r\n");
       out.write("  <head>\r\n");
@@ -50,13 +51,12 @@ public final class ejercicio6_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <title>JSP Page</title>\r\n");
       out.write("  </head>\r\n");
       out.write("  <body>\r\n");
-      out.write("    <h1>Conversor</h1>\r\n");
-      out.write("    <form method=\"post\" action=\"ejercicio6_1.jsp\">\r\n");
-      out.write("      Cantidad en pesetas: <input type=\"number\"  step=\"10\" name=\"pesetas\"></br> \r\n");
-      out.write("      \r\n");
-      out.write("      <input type=\"submit\" value=\"Ver resultado\"> \r\n");
-      out.write("      \r\n");
+      out.write("    <h1>Conversor de divisas</h1>\r\n");
+      out.write("    <form method=\"post\" action=\"ejercicio7_1.jsp\"> \r\n");
+      out.write("     Cantidad: <input type=\"number\"  step=\"10\" name=\"cantidad\"></br>\r\n");
+      out.write("     <input type=\"submit\" value=\"Ver resultado\"> \r\n");
       out.write("    </form>\r\n");
+      out.write("    \r\n");
       out.write("  </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
